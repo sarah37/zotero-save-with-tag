@@ -109,7 +109,7 @@ Zotero.SaveWithTag = new function () {
 
     this.updateItem = function (item, operation) {
         //hanmei
-        item.addTag('To-Read', 1);
+        item.addTag('unread', 1);
         try { item.saveTx(); } catch (e) {
             Zotero.logError(e);
         }
